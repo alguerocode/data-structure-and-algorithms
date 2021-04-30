@@ -6,29 +6,24 @@ class Queue {
     this.arrSize = parseInt(fullSize);
   }
   enqueue(item) {
-    if (this.rear === this.arrSize - 1) {
-      console.log('array full');
+    if (this.rear === this.arrSize - 1) { // true => full queue
       return;
     }
-    if (this.front = -1) { this.front = 0 };
+    if (this.front = -1) { this.front = 0 }; // enqueue action
     this.rear += 1;
     this.queue[this.rear] =item;
-    console.log(this.queue, this.front, this.rear);
   }
   dequeue() {
-    if (this.arrSize === this.front || this.front === -1) {
-
-      console.log('the queue is empty',this.queue);
+    if (this.arrSize === this.front || this.front === -1) { // true => empty queue
       return;
     } 
-    this.queue[this.front] = null;
-    if(this.front >= this.rear) {
+    this.queue[this.front] = null; // dequeue action 
+    if(this.front >= this.rear) {  // if empty => reset 
       this.rear = -1;
       this.front = -1;
-    } else {
+    } else { // else increase the head or front
       this.front += 1
     }
-    console.log(this.queue, this.front, this.rear);
   }
 }
 const newQueue = new Queue(5);
