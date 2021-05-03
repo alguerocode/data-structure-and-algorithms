@@ -29,31 +29,7 @@ class Queue {
 const newQueue = new Queue(5);
 console.log(newQueue)
 newQueue.enqueue(3);
-newQueue.enqueue(3);
-newQueue.enqueue(3);
-newQueue.enqueue(3);
-newQueue.enqueue(3);
-newQueue.enqueue(3);
 newQueue.dequeue();
-newQueue.dequeue();
-newQueue.dequeue();
-newQueue.dequeue();
-newQueue.dequeue();
-newQueue.dequeue();
-newQueue.dequeue();
-newQueue.dequeue();
-newQueue.dequeue();
-newQueue.dequeue();
-newQueue.enqueue(3);
-newQueue.enqueue(3);
-newQueue.enqueue(3);
-newQueue.dequeue();
-newQueue.dequeue();
-newQueue.dequeue();
-newQueue.dequeue();
-newQueue.dequeue();
-newQueue.enqueue(3);
-newQueue.enqueue(3);
 
 
 
