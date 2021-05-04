@@ -1,68 +1,77 @@
 // this.maxHeap data structure
 
-// left child = i * 2;
 // left child = i * 2 + 1;
-// parent = Math.floor(i / 2);
+// left child = i * 2 + 2;
+// parent = Math.floor(i - 1) / 2;
 
-class maxHeap {
-  constructor(size) {
-    this.maxthis.maxHeap = [null];
-    this.size = size;
-
-  }
-  insert(num) {
-    if (this.isFull()) {
-      return;
-    }
-    this.maxthis.maxHeap.push(num);
-    if (this.maxthis.maxHeap.length > 2) {
-      let idx = this.maxthis.maxHeap.length - 1;
-      while (this.maxthis.maxHeap[idx] > this.maxthis.maxHeap[Math.floor(idx / 2)]) {
-        if (idx >= 1) {
-          this.maxthis.maxHeap[idx] = this.maxthis.maxHeap[Math.floor(idx / 2)];
-          this.maxthis.maxHeap[Math.floor(idx / 2)] = this.maxthis.maxHeap[idx];
-          if (Math.floor(idx / 2) > 1) {
-            idx = Math.floor(idx / 2);
-          } else {
-            break;
-          }
-        }
-      }
-    }
-  };
-  remove() {
-		let smallest = this.maxHeaps[1];
-		if (this.maxHeap.length > 2) {
-			this.maxHeap[1] = this.maxHeap[this.maxHeap.length - 1];
-			this.maxHeap.splice(this.maxHeap.length - 1);
-			if (this.maxHeap.length == 3) {
-				if (this.maxHeap[1] < this.maxHeap[2]) {
-					[this.maxHeap[1], this.maxHeap[2]] = [this.maxHeap[2], this.maxHeap[1]];
-				};
-				return smallest;
-			};
-			let i = 1;
-			let left = 2 * i;
-			let right = 2 * i + 1;
-			while (this.maxHeap[i] <= this.maxHeap[left] || this.maxHeap[i] <= this.maxHeap[right]) {
-				if (this.maxHeap[left] > this.maxHeap[right]) {
-					[this.maxHeap[i], this.maxHeap[left]] = [this.maxHeap[left], this.maxHeap[i]];
-					i = 2 * i
-				} else {
-					[this.maxHeap[i], this.maxHeap[right]] = [this.maxHeap[right], this.maxHeap[i]];
-					i = 2 * i + 1;
-				};
-				left = 2 * i;
-				right = 2 * i + 1;
-				if (this.maxHeap[left] == undefined || this.maxHeap[right] == undefined) {
-					break;
-				};
-			};
-		} else if (this.maxHeap.length == 2) {
-			this.maxHeap.splice(1, 1);
-		} else {
-			return null;
-		};
-		return smallest;
-	};
+class MinHeap {
+	constructor(size) {
+		this.size = size;
+		this.heap = [];
+		this.lIndex = (i) => i * 2 + 1;
+		this.rIndex = (i) => i * 2 + 2;
+		this.parentIndex = (i) => Math.floor((i - 1) / 2);
+	}
+	heapfiyUp() {
+		let index = this.heap.length - 1;
+		while (this.parentIndex(index) >= 0 && this.heap[index] < this.heap[this.parentIndex(index)]) {
+			this._swap(index,this.parentIndex(index));
+			index = this.parentIndex(index);
+		}
+	}
+	heapifyDown() {
+		let index = 0;
+		while (this.lIndex(index) < this.heap.length) {
+			let smallerChildIndex = this.lIndex(index);
+			if (this.rIndex(index) < this.heap.length && this.heap[this.rIndex(index)] < this.heap[this.lIndex(index)]) {
+				smallerChildIndex = this.rIndex(index);
+			}
+			if (this.heap[index] > this.heap[smallerChildIndex]) {
+				this._swap(index, smallerChildIndex);
+				index = smallerChildIndex;
+			} else {
+				break;
+			}
+		}
+	}
+	insert(item) {
+		if (item === NaN) { return new Error('the argument should a number') };
+		if (this._isFull()) { return };
+		this.heap.push(item);
+		this.heapfiyUp();
+		console.log(this.heap)
+	}
+	_swap(indexOne, indexTwo) {
+		[this.heap[indexOne], this.heap[indexTwo]] = [this.heap[indexTwo], this.heap[indexOne]];
+	}
+	_peek() {
+		if (!this._isEmpty()) {
+			return this.heap[0];
+		}
+	}
+	_isFull() {
+		if (this.heap.length -1 === this.size) {
+			console.log('the heap is full');
+			return true;
+		}
+		return false;
+	}
+	poll() {
+		if (this._isEmpty()) { return };
+		let item = this.heap[0];
+		this.heap[0] = this.heap[this.heap.length - 1];
+		this.heap.pop()
+		this.heapifyDown();
+		console.log(this.heap)
+		return item;
+	}
+	_isEmpty() {
+		if (this.heap.length === 0) {
+			console.log('the heap is empty');
+			return true;
+		}
+		return false;
+	}
 }
+const heap = new MinHeap(10);
+console.log(heap)
