@@ -1,4 +1,4 @@
-// this.maxHeap data structure
+// min Heap data structure
 
 // left child = i * 2 + 1;
 // left child = i * 2 + 2;
@@ -15,7 +15,7 @@ class MinHeap {
 	heapfiyUp() {
 		let index = this.heap.length - 1;
 		while (this.parentIndex(index) >= 0 && this.heap[index] < this.heap[this.parentIndex(index)]) {
-			this._swap(index,this.parentIndex(index));
+			this._swap(index, this.parentIndex(index));
 			index = this.parentIndex(index);
 		}
 	}
@@ -39,7 +39,6 @@ class MinHeap {
 		if (this._isFull()) { return };
 		this.heap.push(item);
 		this.heapfiyUp();
-		console.log(this.heap)
 	}
 	_swap(indexOne, indexTwo) {
 		[this.heap[indexOne], this.heap[indexTwo]] = [this.heap[indexTwo], this.heap[indexOne]];
@@ -50,7 +49,7 @@ class MinHeap {
 		}
 	}
 	_isFull() {
-		if (this.heap.length -1 === this.size) {
+		if (this.heap.length - 1 === this.size) {
 			console.log('the heap is full');
 			return true;
 		}
@@ -62,7 +61,6 @@ class MinHeap {
 		this.heap[0] = this.heap[this.heap.length - 1];
 		this.heap.pop()
 		this.heapifyDown();
-		console.log(this.heap)
 		return item;
 	}
 	_isEmpty() {
@@ -73,5 +71,9 @@ class MinHeap {
 		return false;
 	}
 }
-const heap = new MinHeap(10);
-console.log(heap)
+
+const minHeap = new MinHeap(10);
+minHeap.insert(3);
+minHeap.poll();
+
+
