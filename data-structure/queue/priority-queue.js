@@ -68,6 +68,6 @@ class MaxPriorityQueue {
 }
 const priorityQueue = new MaxPriorityQueue(10);
 priorityQueue.insert("ITEM");
-priorityQueue.remove("ITEM");
+priorityQueue.remove("ITEM"); 
 
 
