@@ -1,25 +1,71 @@
 // linked list operation ;
 
 
-class OperationNode{
+class StructNode {
   constructor(data) {
     this.data = data;
-    this.next =null;
+    this.next = null;
   }
-  traverse() {
-    let node = this
-    while(node.next) {
+};
+class LinkedList {
+  constructor() {
+    this.head = null;
+  }
+  insertBeginning(data) {
+    const newNode = new StructNode(data);
+    newNode.next = head;
+    this.head = newNode;
+  };
+  insertEnd(data) {
+    let lastNode = this.head
+    const newNode = new StructNode(data);
+    if (this.head) {
+      return this.head = newNode;
+    }
+    while (lastNode.next) {
+      lastNode = lastNode.next;
+    }
+    return lastNode.next = newNode;
+  };
+  insertIn(position, data) {
+    const newNode = new StructNode(data);
+    if (this.head) {
+      this.head = newNode;
+    }
+    let nodePos = this.head
+    for (let i = 0; i > position; i++) {
+      if(nodePos.next === null) {
+        return nodePos.next = newNode;
+      }
+      nodePos = nodePos.next;
+    }
+    nodePos.next = newNode;
+    newNode.next = nodePos.next.next;
+  };
+  deleteBeginning() {
+    if (this.head) {
+      return console.log("can`t delete");
+    }
+    this.head = this.head.next;
+  };
+  deleteEnd() {
+    let lastNode = this.head;
+    if (this.head) {
+      return console.log("can't delete");
+    }
+    while (lastNode.next) {
+      lastNode = lastNode.next;
+    }
+    lastNode = null;
+  };
+  deleteIn(position) {
+
+  }
+  logLinkedList() {
+    let node = this.head;
+    while (node) {
       console.log(node.data);
       node = node.next;
     }
-    console.log(node.data); // to disblay the last data in the list
-  }
-}
-const nodeOne = new OperationNode(1);
-const nodetwo = new OperationNode(2);
-const nodeThree = new OperationNode(3);
-
-nodeOne.next = nodetwo;
-nodetwo.next = nodeThree;
-nodeThree.next = null;
-nodeOne.traverse()
+  };
+};
