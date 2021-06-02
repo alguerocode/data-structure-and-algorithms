@@ -1,0 +1,24 @@
+{
+  "name": "DSA",
+  "version": "1.0.0",
+  "description": "leaning data structure and algorithsm (DSA) by practing in github",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"nodemon data-structure/hash-table.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/salah959/data-structure-and-algorithms.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/salah959/data-structure-and-algorithms/issues"
+  },
+  "homepage": "https://github.com/salah959/data-structure-and-algorithms#readme",
+  "dependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
