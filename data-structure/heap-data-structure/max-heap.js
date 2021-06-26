@@ -20,6 +20,7 @@ class MaxHeap {
 		}
 		this.heap.push(item);
 		this.heapfiyUp();
+		console.log(this.heap)
 		return item
 	}
 	poll() {
@@ -31,6 +32,7 @@ class MaxHeap {
 		this.heap[0] = this.heap[this.heap.length - 1];
 		this.heap.pop();
 		this.heapifyDown();
+		console.log(this.heap)
 		return removedItem;
 	}
 	heapfiyUp() {
@@ -42,15 +44,15 @@ class MaxHeap {
 	}
 	heapifyDown() {
 		let index = 0;
-		let smallerChildIndex;
+		let biggerChild;
 		while (this.leftIndex(index) < this.heap.length) {
-			smallerChildIndex = this.leftIndex(index);
+			biggerChild = this.leftIndex(index);
 			if (this.heap[this.rightIndex(index)] > this.heap[this.leftIndex(index)] && this.rightIndex(index) < this.heap.length) {
-				smallerChildIndex = this.rightIndex(index);   
+				biggerChild = this.rightIndex(index);   
 			}
-			if(this.heap[smallerChildIndex] > this.heap[index]) {
-				[this.heap[smallerChildIndex], this.heap[index]] = [this.heap[index], this.heap[smallerChildIndex]];
-				index = smallerChildIndex;
+			if(this.heap[biggerChild] > this.heap[index]) {
+				[this.heap[biggerChild], this.heap[index]] = [this.heap[index], this.heap[biggerChild]];
+				index = biggerChild;
 			} else {
 				break;
 			}
@@ -61,7 +63,5 @@ class MaxHeap {
 const maxHeap = new MaxHeap(10);
 maxHeap.insert("ITEM") // insert item to the heap
 maxHeap.poll() // poll item from the heap
-console.log(maxHeap);
-
-
+// console.log(maxHeap);
 
