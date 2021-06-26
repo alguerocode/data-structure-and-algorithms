@@ -41,6 +41,7 @@ function isPerfectBainaryTree (node,depth , currentLevel = 1) {
   return isPerfectBainaryTree(node.left, depth, currentLevel + 1) && isPerfectBainaryTree(node.right, depth, currentLevel + 1);
 }
 
+// create real tree
 const headNode = new TreeNode(1);
 headNode.left = new TreeNode(2);
 headNode.right = new TreeNode(3);
@@ -49,6 +50,8 @@ headNode.left.right= new TreeNode(6);
 headNode.right.right= new TreeNode(7);
 headNode.right.left= new TreeNode(8);
 
+
+// test
 if(isPerfectBainaryTree(headNode, calcDepth(headNode))) {
   console.log('is perfect bainary tree');
 } else {
