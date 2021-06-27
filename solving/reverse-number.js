@@ -3,7 +3,7 @@
 // reverse the number || or return 0 if the number bigger thean 64bit;
 
 const reverse = function(x) {
-  const tempNum = x;
+  const isPositive = x >= 0;
   x = Math.abs(x);
   let strNum = '';
   while(x >= 10) {
@@ -11,9 +11,12 @@ const reverse = function(x) {
       x = Math.floor(x / 10);
   }
   strNum += x;
-  if(tempNum > 0) {
+  if(isPositive) {
       return parseInt(strNum);
   }
   return parseInt(strNum) * -1;
 };
 console.log(reverse(-12345));
+console.log(reverse(2352));
+
+
