@@ -12,23 +12,39 @@ class CreateNode {
   }
 }
 
+function traversalTree(node) {
+  if(node == null) {
+    return;
+  }
+  traversalTree(node.left);
+  process.stdout.write(`${node.data} => `);
+  traversalTree(node.right);
+}
 
 function searchNode(node, num) {
-  if (node == null) {
-    return null;
-  } 
+  if(!node) { return null }
   if (node.data === num) {
     return num;
   }
-  else if (node.data <= num) {
+  else if (node.data < num) {
     return searchNode(node.right, num)
   } else if (node.data > num) {
     return searchNode(node.left, num)
   }
-  return null;
 }
 
-function insertNode() {};
+function insertNode(node, data) {
+  if(node == null) {
+    return new CreateNode(data);
+  }
+  if(node.data < data) {
+    node.right = insertNode(node.right, data);
+  }
+  if(node.data > data){
+    node.left = insertNode(node.left, data);
+  }
+  return node; // we check do not attach the rest of tree;
+};
 
 function deleteNode() { };
 
@@ -43,8 +59,20 @@ headNode.right.left= new CreateNode(14);
 
 // test search;
 
+console.log('---- search test ----');
+
 console.log(searchNode(headNode, 14));
 console.log(searchNode(headNode, 6));
 console.log(searchNode(headNode, 3));
 console.log(searchNode(headNode, 5));
 console.log(searchNode(headNode, 10));
+
+// test insert
+
+console.log('---- insert test -----');
+
+insertNode(headNode,20);
+insertNode(headNode,4 );
+insertNode(headNode,11);
+insertNode(headNode,11);
+traversalTree(headNode);
