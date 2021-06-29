@@ -1,6 +1,6 @@
 // bainary search 
 function bainaryWhile(number, sortedArr) {
-  let left = 0;=
+  let left = 0;
   let right = sortedArr.length - 1;
   let mid;
   while (left <= right) {
