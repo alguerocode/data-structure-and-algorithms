@@ -11,10 +11,8 @@ const reverse = function(x) {
       x = Math.floor(x / 10);
   }
   strNum += x;
-  if(isPositive) {
-      return parseInt(strNum);
-  }
-  return parseInt(strNum) * -1;
+  
+  return isPostive ? parseInt(strNum) : parseInt(Num) * -1;
 };
 console.log(reverse(-12345));
 console.log(reverse(2352));
