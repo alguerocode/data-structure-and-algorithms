@@ -37,7 +37,7 @@ function insertNode(node, data) {
   if (node == null) {
     return new CreateNode(data);
   }
-  if (node.data < data) {
+  if (node.data <= data) {
     node.right = insertNode(node.right, data);
   }
   if (node.data > data) {
