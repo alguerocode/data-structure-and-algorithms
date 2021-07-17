@@ -2,13 +2,13 @@
 
 
 leaning data structure and algorithsm (DSA) by practing in github
-
+<p align="center">
 <a href="https://github.com/abhisheknaiidu/awesome-github-profile-readme/stargazers"><img src="https://img.shields.io/github/stars/alhashmicode/data-structure-and-algorithms" alt="Stars Badge"/></a>
 <a href="https://github.com/abhisheknaiidu/awesome-github-profile-readme/network/members"><img src="https://img.shields.io/github/forks/alhashmicode/data-structure-and-algorithms" alt="Forks Badge"/></a>
 <a href="https://github.com/abhisheknaiidu/awesome-github-profile-readme/pulls"><img src="https://img.shields.io/github/issues-pr/alhashmicode/data-structure-and-algorithms" alt="Pull Requests Badge"/></a>
 <a href="https://github.com/abhisheknaiidu/awesome-github-profile-readme/issues"><img src="https://img.shields.io/github/issues/alhashmicode/data-structure-and-algorithms" alt="Issues Badge"/></a>
 <a href="https://github.com/abhisheknaiidu/awesome-github-profile-readme/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/alhashmicode/data-structure-and-algorithms?color=2b9348"></a>
-
+</p>
 <p align="center">
   <img src="https://user-images.githubusercontent.com/75932477/116763707-764ee980-aa2f-11eb-8c9e-79a39ea36e0a.jpg" width="600" height="300">
 </p>
