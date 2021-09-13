@@ -31,7 +31,5 @@ function bubbleSortByDescending(arr) {
 
 // test both bubble sort
 
-const sortedArrByAscending = bubbleSortByAscending([3, 46, 4, 6, 2, 7, 5]);
-const sortedArrByDescending = bubbleSortByDescending([3, 46, 4, 6, 1, 7, 5]);
-console.log(sortedArrByAscending);
-console.log(sortedArrByDescending);
+console.log(bubbleSortByAscending([3, 46, 4, 6, 2, 7, 5]));
+console.log(bubbleSortByDescending([3, 46, 4, 6, 1, 7, 5]));
