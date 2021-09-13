@@ -1,9 +1,10 @@
 // implementing selection sort;
 
 function selectionSortByAscending(nums) {
+  if (!Array.isArray(arr)) throw new Error("argument must be array");
   for (let i = 0; i < nums.length; i++) {
     let minIndex = i;
-    for (let j = i; j < nums.length; j++) {
+    for (let j = i + 1; j < nums.length; j++) {
       if (nums[minIndex] > nums[j]) {
         minIndex = j;
       }
@@ -14,9 +15,10 @@ function selectionSortByAscending(nums) {
 }
 
 function selectionSortByDescending(nums) {
+  if (!Array.isArray(arr)) throw new Error("argument must be array");
     for (let i = 0; i < nums.length; i++) {
         let minIndex = i;
-        for (let j = i; j < nums.length; j++) {
+        for (let j = i + 1; j < nums.length; j++) {
           if (nums[minIndex] < nums[j]) {
             minIndex = j;
           }
