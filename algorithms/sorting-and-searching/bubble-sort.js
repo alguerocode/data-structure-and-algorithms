@@ -1,6 +1,6 @@
 // impelmenting bubble sort algorithms
 
-function bubbleSortByDescending(arr = []) {
+function bubbleSortByAscending(arr = []) {
   if (!Array.isArray(arr)) throw new Error("argument must be array");
 
   for (let i = 0; i < arr.length; i++) {
@@ -14,7 +14,7 @@ function bubbleSortByDescending(arr = []) {
   }
   return arr;
 }
-function bubbleSortByAscending(arr) {
+function bubbleSortByDescending(arr) {
   if (!Array.isArray(arr)) throw new Error("argument must be array");
 
   for (let i = 0; i < arr.length; i++) {
@@ -31,7 +31,7 @@ function bubbleSortByAscending(arr) {
 
 // test both bubble sort
 
-const sortedArrByDescending = bubbleSortByDescending([3, 46, 4, 6, 1, 7, 5]);
 const sortedArrByAscending = bubbleSortByAscending([3, 46, 4, 6, 2, 7, 5]);
-console.log(sortedArrByDescending);
+const sortedArrByDescending = bubbleSortByDescending([3, 46, 4, 6, 1, 7, 5]);
 console.log(sortedArrByAscending);
+console.log(sortedArrByDescending);
