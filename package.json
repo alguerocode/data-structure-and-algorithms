@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"nodemon solving/roman-to-integer.js"
+    "start":"nodemon algorithms/sorting-and-searching/bubble-sort.js"
   },
   "repository": {
     "type": "git",
