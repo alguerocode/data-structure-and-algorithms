@@ -10,7 +10,7 @@ I'am leaning data structure and algorithsm (DSA) by practing in github
 <a href="https://github.com/abhisheknaiidu/awesome-github-profile-readme/issues"><img src="https://img.shields.io/github/issues/alhashmicode/data-structure-and-algorithms" alt="Issues Badge"/></a>
 <a href="https://github.com/abhisheknaiidu/awesome-github-profile-readme/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/alhashmicode/data-structure-and-algorithms?color=2b9348"></a>
 </p>
-
+## all DSA
 ### algorithms
 
 
