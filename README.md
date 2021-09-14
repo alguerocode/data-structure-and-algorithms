@@ -35,13 +35,13 @@ I'am leaning data structure and algorithsm (DSA) by practing in github
   * [linked list operation](./data-structure/linked-list/linked-list-operation.js)
   * [linked list types](./data-structure/linked-list/linked-list-types.js)
 - 🪓 heap data structure
-  * [max heap](./data-structure/linked-list/heap-data-structure/max-heap.js)
-  * [min heap](./data-structure/linked-list/heap-data-structure/min-heap.js)
+  * [max heap](./data-structure/heap-data-structure/max-heap.js)
+  * [min heap](./data-structure/heap-data-structure/min-heap.js)
 - 🎢 queues
-  * [simple queue](./algorithms/data-structure/queue/simple-queue.js)
-  * [cicular queue](./algorithms/data-structure/queue/circular-queue.js)
-  * [dequeue](./algorithms/data-structure/queue/deque.js)
-  * [priority queue](./algorithms/data-structure/queue/priority-queue.js)
+  * [simple queue](./data-structure/queue/simple-queue.js)
+  * [cicular queue](./data-structure/queue/circular-queue.js)
+  * [dequeue](./data-structure/queue/deque.js)
+  * [priority queue](./data-structure/queue/priority-queue.js)
 - 🌲 trees
   * [bainary tree](./data-structure/trees/bainary-tree.js)
   * [complete tree](./data-structure/trees/complete-tree.js)
