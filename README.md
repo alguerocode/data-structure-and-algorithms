@@ -20,6 +20,7 @@ I'am leaning data structure and algorithsm (DSA) by practing in github
   * [selection sort](./algorithms/sorting-and-searching/selection-sort.js)
   * [merge sort](./algorithms/sorting-and-searching/merge-sort.js)
   * [quick sort](./algorithms/sorting-and-searching/quick-sort.js)
+  * [linear search](./algorithms/sorting-and-searching/linear-search.js)
   * [bainary search](./algorithms/sorting-and-searching/bainary-search.js)
 - ⚙️ Dynamic Programming
 
