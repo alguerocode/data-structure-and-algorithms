@@ -27,33 +27,33 @@ I'am leaning data structure and algorithsm (DSA) by practing in github
 
 ### 🥞 data structure
 - 🧮 public data structure
-  * [bainary search](./algorithms/data-structure/bainary-search-tree.js)
-  * [stack list](./algorithms/data-structure/stack.js)
-  * [hash table](./algorithms/data-structure/hash-table.js)
+  * [bainary search](./data-structure/bainary-search-tree.js)
+  * [stack list](./data-structure/stack.js)
+  * [hash table](./data-structure/hash-table.js)
 - ⛓️ linked list
-  * [linked list](./algorithms/data-structure/linked-list/linked-list.js)
-  * [linked list operation](./algorithms/data-structure/linked-list/linked-list-operation.js)
-  * [linked list types](./algorithms/data-structure/linked-list/linked-list-types.js)
+  * [linked list](./data-structure/linked-list/linked-list.js)
+  * [linked list operation](./data-structure/linked-list/linked-list-operation.js)
+  * [linked list types](./data-structure/linked-list/linked-list-types.js)
 - 🪓 heap data structure
-  * [max heap](./algorithms/data-structure/linked-list/heap-data-structure/max-heap.js)
-  * [min heap](./algorithms/data-structure/linked-list/heap-data-structure/min-heap.js)
+  * [max heap](./data-structure/linked-list/heap-data-structure/max-heap.js)
+  * [min heap](./data-structure/linked-list/heap-data-structure/min-heap.js)
 - 🎢 queues
   * [simple queue](./algorithms/data-structure/queue/simple-queue.js)
   * [cicular queue](./algorithms/data-structure/queue/circular-queue.js)
   * [dequeue](./algorithms/data-structure/queue/deque.js)
   * [priority queue](./algorithms/data-structure/queue/priority-queue.js)
 - 🌲 trees
-  * [bainary tree](./algorithms/data-structure/trees/bainary-tree.js)
-  * [complete tree](./algorithms/data-structure/trees/complete-tree.js)
-  * [full tree](./algorithms/data-structure/trees/full-tree.js)
-  * [perfect tree](./algorithms/data-structure/trees/perfect-tree.js)
-  * [traversal tree](./algorithms/data-structure/trees/traversal-tree.js)
+  * [bainary tree](./data-structure/trees/bainary-tree.js)
+  * [complete tree](./data-structure/trees/complete-tree.js)
+  * [full tree](./data-structure/trees/full-tree.js)
+  * [perfect tree](./data-structure/trees/perfect-tree.js)
+  * [traversal tree](./data-structure/trees/traversal-tree.js)
    
  
 ### some other problem solving
 - 🧠 problem solving
-  * [reverse number](./algorithms/solving/reverse-number.js)
-  * [roman to integer](./algorithms/solving/roman-to-integer.js)
+  * [reverse number](./solving/reverse-number.js)
+  * [roman to integer](./solving/roman-to-integer.js)
 
  ## contributing 
  - must you have the basic of algorithms and data structure 🧠🦾🦾
