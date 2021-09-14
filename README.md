@@ -10,12 +10,21 @@ I'am leaning data structure and algorithsm (DSA) by practing in github
 <a href="https://github.com/abhisheknaiidu/awesome-github-profile-readme/issues"><img src="https://img.shields.io/github/issues/alhashmicode/data-structure-and-algorithms" alt="Issues Badge"/></a>
 <a href="https://github.com/abhisheknaiidu/awesome-github-profile-readme/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/alhashmicode/data-structure-and-algorithms?color=2b9348"></a>
 </p>
-## all DSA
-### algorithms
+
+## Table of Content
+### 📈 algorithms 
+
+- 🛠️ Sorting and Searching algorithms
+  * [bubble sort](./algorithms/sorting-and-searching/bubble-sort.js)
+  * [insertion sort](./algorithms/sorting-and-searching/insertion-sort.js)
+  * [selection sort](./algorithms/sorting-and-searching/selection-sort.js)
+  * [merge sort](./algorithms/sorting-and-searching/merge-sort.js)
+  * [quick sort](./algorithms/sorting-and-searching/quick-sort.js)
+  * [bainary search](./algorithms/sorting-and-searching/bainary-search.js)
+- ⚙️ Dynamic Programming
 
 
-### data structure
-
+### 🥞 data structure
 
  ## contributing 
  - must you have the basic of algorithms and data structure 🧠🦾🦾
