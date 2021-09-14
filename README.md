@@ -1,6 +1,6 @@
 # DSA in javascript
 
-### Here all algorithms and data structure that I learn and solve
+### Here all algorithms and data structure that I learned and solved
 
 I'am leaning data structure and algorithsm (DSA) by practing in github
 <p align="start">
