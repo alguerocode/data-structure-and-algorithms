@@ -11,8 +11,8 @@ I'am leaning data structure and algorithsm (DSA) by practing in github
 <a href="https://github.com/abhisheknaiidu/awesome-github-profile-readme/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/alhashmicode/data-structure-and-algorithms?color=2b9348"></a>
 </p>
 
-## Table of Content
-### 📈 algorithms 
+## Table-of-Content
+### 📈 Algorithms 
 
 - 🛠️ Sorting and Searching algorithms
   * [bubble sort](./algorithms/sorting-and-searching/bubble-sort.js)
@@ -25,7 +25,7 @@ I'am leaning data structure and algorithsm (DSA) by practing in github
 - ⚙️ Dynamic Programming
 
 
-### 🥞 data structure
+### 🥞 Data Structure
 - 🧮 public data structure
   * [bainary search](./data-structure/bainary-search-tree.js)
   * [stack list](./data-structure/stack.js)
