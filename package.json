@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/salah959/data-structure-and-algorithms#readme",
   "dependencies": {
-    "nodemon": "^2.0.7"
+    "nodemon": "^2.0.20"
   }
 }
